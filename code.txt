@@ -1,0 +1,34 @@
+############# FOOTER CODE (Link for page)
+
+linkedin = "https://raw.githubusercontent.com/sahirmaharaj/Kaeyros/main/img/linkedin.gif"
+topmate = "https://raw.githubusercontent.com/sahirmaharaj/Kaeyros/main/img/topmate.gif"
+email = "https://raw.githubusercontent.com/sahirmaharaj/Kaeyros/main/img/email.gif"
+newsletter = (
+    "https://raw.githubusercontent.com/sahirmaharaj/Kaeyros/main/img/newsletter.gif"
+)
+share = "https://raw.githubusercontent.com/sahirmaharaj/Kaeyros/main/img/share.gif"
+
+uptime = "https://uptime.betterstack.com/status-badges/v1/monitor/196o6.svg"
+
+st.sidebar.caption(
+    f"""
+        <div style='display: flex; align-items: center;'>
+            <a href = 'https://www.linkedin.com/in/sahir-maharaj/'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://topmate.io/sahirmaharaj/362667'><img src='{topmate}' style='width: 32px; height: 32px; margin-right: 25px;'></a>
+            <a href = 'mailto:sahir@sahirmaharaj.com'><img src='{email}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7163516439096733696'><img src='{newsletter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'https://www.kaggle.com/sahirmaharajj'><img src='{share}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            
+        </div>
+        <br>
+        <a href = 'https://Kaeyros.betteruptime.com/'><img src='{uptime}'></a>
+        
+        """,
+    unsafe_allow_html=True,
+)
+
+
+#@st.experimental_dialog("How to use Kaeyros.AI", width=1920)
+def show_video(item):
+    video_url = ""
+    st.video(video_url, loop=False, autoplay=True, muted=False)
