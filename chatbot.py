@@ -1092,10 +1092,7 @@ if st.session_state.follow_up:
 
         full_response_prompt = generate_arctic_response_follow_up()
         message_prompt = {"content": full_response_prompt}
-        st.button(
-            str(message_prompt["content"]).replace("_", " ").strip(),
-            on_click=display_question,
-        )
+
 if st.session_state.messages[-1]["role"] != "assistant":
 
     st.session_state.show_animation = False
@@ -1110,10 +1107,7 @@ if st.session_state.messages[-1]["role"] != "assistant":
 
         full_response_prompt = generate_arctic_response_follow_up()
         message_prompt = {"content": full_response_prompt}
-        st.button(
-            str(message_prompt["content"]).replace("_", " ").strip(),
-            on_click=display_question,
-        )
+
 
         st.session_state.messages.append(message)
 if st.session_state.reset_trigger:
